@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabeeha Ali - DevOps Practitioner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f0f9ff;
+        }
+
+        /* Fade-in and scale-up animation */
+        .fade-in {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        /* Sticky header */
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        /* Hover effect for social icons */
+        .social-icon:hover {
+            transform: scale(1.2);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-white font-sans leading-normal tracking-normal">
+
+    <!-- Header Section -->
+    <div id="header" class="sticky bg-sky-500 text-white p-6 md:p-8 shadow-lg">
+        <div class="text-center">
+            <h1 class="text-3xl md:text-4xl font-bold">Nabeeha Ali</h1>
+            <p class="text-md md:text-lg mt-2">DevOps Practitioner</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="https://www.linkedin.com/in/nabeeha-ali-15111a19b" class="social-icon">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn"
+                        class="h-5 w-5 md:h-6 md:w-6 inline">
+                </a>
+                <a href="https://github.com/NabeehaAliii" class="social-icon">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub"
+                        class="h-5 w-5 md:h-6 md:w-6 inline">
+                </a>
+                <a href="mailto:alinabeeha44@gmail.com" class="social-icon">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/email.png" alt="Email"
+                        class="h-5 w-5 md:h-6 md:w-6 inline">
+                </a>
+                <p class="text-sm md:text-white">Phone: 0308-2629314</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Sections -->
+    <div class="max-w-2xl md:max-w-4xl mx-auto my-6 md:my-10 p-5 bg-white rounded-lg shadow-lg">
+
+        <!-- About Section -->
+        <div id="about" class="mt-6 md:mt-8 p-4 md:p-6 bg-white border border-sky-500 rounded-lg fade-in">
+            <h2 class="text-xl md:text-2xl font-semibold text-gray-800">About Me</h2>
+            <p class="mt-2 md:mt-4 text-sm md:text-base text-gray-600">
+                Dedicated and passionate junior year BSCS student from Islamabad with foundational experience in web
+                development and cloud computing. Currently expanding my knowledge in DevOps principles, tools, and
+                automation. I aim to leverage my learning in cloud technologies, continuous integration, and
+                infrastructure management to pursue a DevOps career, focusing on automating, scaling, and optimizing
+                systems for efficiency.
+            </p>
+        </div>
+
+        <!-- Skills Section -->
+        <div id="skills" class="mt-6 md:mt-8 p-4 md:p-6 bg-sky-100 border border-sky-500 rounded-lg fade-in">
+            <h2 class="text-xl md:text-2xl font-semibold text-sky-700">Skills</h2>
+            <ul class="list-disc ml-5 mt-2 md:mt-4 text-sm md:text-base text-gray-700">
+                <li>AWS Cloud Services: EC2, VPC, S3, CloudFront, IAM, CloudWatch, Route 53</li>
+                <li>Networking & Security: SSH, TCP/IP, DNS</li>
+                <li>Version Control: Git & GitHub</li>
+                <li>Linux Commands</li>
+                <li>Full-Stack Development: Volunteer Network (React.js, Node.js, MySQL)</li>
+                <li>Hosting and Deployment: Static Website on S3</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div id="projects" class="mt-6 md:mt-8 p-4 md:p-6 bg-white border border-sky-500 rounded-lg fade-in">
+            <h2 class="text-xl md:text-2xl font-semibold text-gray-800">Projects</h2>
+            <div class="mt-2 md:mt-4">
+                <h3 class="text-md md:text-lg font-semibold text-gray-800">1. Cinemax - Static Website Hosting</h3>
+                <p class="text-sm md:text-base text-gray-600">Hosted a static website on Amazon S3 with CloudFront for global distribution.
+                    Implemented SSL certification using AWS Certificate Manager and managed domain registration via
+                    Route 53.</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-md md:text-lg font-semibold text-gray-800">2. Volunteer Network</h3>
+                <p class="text-sm md:text-base text-gray-600">Created a platform to connect volunteers with organizations using React.js for
+                    the frontend and Node.js with MySQL for the backend. Managed user authentication, data management,
+                    and donation handling functionalities.</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-md md:text-lg font-semibold text-gray-800">3. AWS VPC and Networking Setup</h3>
+                <p class="text-sm md:text-base text-gray-600">Configured custom VPC with public/private subnets, EC2 instances, Bastion Host,
+                    and NAT instance for internet access. Assigned IAM roles for monitoring instance utilization using
+                    CloudWatch.</p>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div id="education" class="mt-6 md:mt-8 p-4 md:p-6 bg-sky-100 border border-sky-500 rounded-lg fade-in">
+            <h2 class="text-xl md:text-2xl font-semibold text-sky-700">Education</h2>
+            <p class="mt-2 md:mt-4 text-sm md:text-base text-gray-700">Bachelors in Computer Science - Institute of Space Technology, Islamabad
+                (2019-2023)</p>
+        </div>
+
+        <!-- Certifications Section -->
+        <div id="certifications" class="mt-6 md:mt-8 p-4 md:p-6 bg-white border border-sky-500 rounded-lg fade-in">
+            <h2 class="text-xl md:text-2xl font-semibold text-gray-800">Certifications</h2>
+            <ul class="list-disc ml-5 mt-2 md:mt-4 text-sm md:text-base text-gray-700">
+                <li>Git-GitHub Basics to Advanced (TrainWithShubham)(Self-paced)</li>
+                <li>Linux for Absolute Beginners (Alison) (July 2024)</li>
+                <li>Responsive Web Design (FreeCodeCamp)</li>
+            </ul>
+        </div>
+
+        <!-- Software Section -->
+        <div id="software" class="mt-6 md:mt-8 p-4 md:p-6 bg-sky-100 border border-sky-500 rounded-lg fade-in">
+            <h2 class="text-xl md:text-2xl font-semibold text-sky-700">Software</h2>
+            <p class="mt-2 md:mt-4 text-sm md:text-base text-gray-700">LucidChart: Used for creating architecture diagrams to visualize cloud
+                infrastructures, network designs, and system workflows.</p>
+        </div>
+
+        <!-- Languages Section -->
+        <div id="languages" class="mt-6 md:mt-8 p-4 md:p-6 bg-white border border-sky-500 rounded-lg fade-in">
+            <h2 class="text-xl md:text-2xl font-semibold text-gray-800">Languages</h2>
+            <ul class="list-disc ml-5 mt-2 md:mt-4 text-sm md:text-base text-gray-700">
+                <li>Urdu</li>
+                <li>English</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll Animation for Fade-In Sections with scale
+        const sections = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+
+</html>
