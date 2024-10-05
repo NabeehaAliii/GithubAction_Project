@@ -20,11 +20,11 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: ${{ env.AWS_REGION }}
+        aws-region: ap-south-1
 
-    - name: Deploy to S3
+    - name: Deploy Resume to S3 bucket
       run: |
-        aws s3 sync ./ s3://${{ env.S3_BUCKET_NAME }} --delete --exclude ".git/*"
+        aws s3 sync ./ s3://github-action-resume-hosting.click --delete
 
     - name: Invalidate CloudFront Cache (Optional, if using CloudFront)
       run: |
