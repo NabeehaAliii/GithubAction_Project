@@ -6,37 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nabeeha Ali - DevOps Practitioner</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            background-color: #f0f9ff;
-        }
-
-        /* Fade-in and scale-up animation */
-        .fade-in {
-            opacity: 0;
-            transform: scale(0.95);
-            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: scale(1.05);
-        }
-
-        /* Sticky header */
-        .sticky {
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
-            z-index: 50;
-        }
-
-        /* Hover effect for social icons */
-        .social-icon:hover {
-            transform: scale(1.2);
-            transition: transform 0.3s ease-in-out;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-white font-sans leading-normal tracking-normal">
@@ -149,35 +119,8 @@
         </div>
     </div>
 
-    <!-- JavaScript for Interactivity -->
-    <script>
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Scroll Animation for Fade-In Sections with scale
-        const sections = document.querySelectorAll('.fade-in');
-
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                } else {
-                    entry.target.classList.remove('visible');
-                }
-            });
-        });
-
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 
